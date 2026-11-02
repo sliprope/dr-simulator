@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DR Simulator - Phases</title>
-    <link rel="stylesheet" href="https://jsdelivr.net" /> 
-    <link rel="stylesheet" href="https://jsdelivr.net" />
+    
+    <!-- 1. Swapped to Cloudflare CDN to bypass your network block -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+    <link rel="stylesheet" href="https://cloudflare.com">
+    <link rel="stylesheet" href="https://cloudflare.com">
+    
     <style>
         .site-container { display: flex; justify-content: space-around; align-items: center; width: 800px; margin: 50px auto; }
         .virtual-site { padding: 30px; border: 3px solid #fff; border-radius: 8px; font-size: 24px; font-weight: bold; transition: all 0.5s ease; }
@@ -22,7 +26,7 @@
                 <h2>Phase 1: Normal Replication</h2>
                 <div class="site-container">
                     <div id="site-a" class="virtual-site primary-active">Site A (Primary)</div>
-                    <div id="sync-status" style="font-size: 40px; color: #4caf50;"> ──🗄️──> </div>
+                    <div id="sync-status" style="font-size: 40px; color: #4caf50;"> ──🗄──> </div>
                     <div id="site-b" class="virtual-site dr-standby">Site B (DR Replica)</div>
                 </div>
                 <p style="font-size: 18px; color: #666;">Press the Right Arrow key</p>
@@ -38,9 +42,17 @@
             </section> 
         </div> 
     </div>
-    <script src="https://jsdelivr.net"></script> 
+
+    <!-- 2. Swapped core script engine to Cloudflare CDN -->
+    <script src="https://cloudflare.com"></script> 
     <script> 
-        Reveal.initialize({ autoAnimate: true, controls: true, progress: true, center: true, keyboard: true }); 
+        Reveal.initialize({ 
+            autoAnimate: true, 
+            controls: true, 
+            progress: true, 
+            center: true, 
+            keyboard: true 
+        }); 
     </script>
 </body>
 </html>
